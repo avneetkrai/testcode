@@ -1,0 +1,125 @@
+<div class="container-fluid" *ngIf="!isViewSelected">
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-xs-3" *ngFor="let cardList of cardsData">
+                <div class="card">
+                    <img class="card-img-top" src={{cardList.photoUrl}} alt="POST Image">
+                    <div class="card-header">
+                        <b>{{cardList.title}}</b>
+                    </div>
+                    <div class="card-body">
+                        <p>{{cardList.description}}</p>
+
+                    </div>
+                    <div class="card-footer">
+                        <span *ngFor="let tagsList of cardList.tags">
+                            {{tagsList}}
+                        </span>
+                        <button type="button" class="btn btn-primary" (click)="viewScreen(cardList)">View</button>
+                        <!-- <button type="button" class="btn btn-primary" [routerLink]="['/view',id]">View</button> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-xs-3 ">
+                <div class="card">
+                    <img class="card-img-top" src="../assets/images/No_Img_Avail.jpg" alt="POST Image">
+                    <div class="card-header">
+                        <b>Header 1</b>
+                    </div>
+                    <div class="card-body">
+                        this is card body
+
+                    </div>
+                    <div class="card-footer">
+                        <p></p>Tag 1, Tag 2
+                        <button type="button" class="btn btn-primary">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 ">
+                <div class="card">
+                    <img class="card-img-top" src="../assets/images/No_Img_Avail.jpg" alt="POST Image">
+                    <div class="card-header">
+                        <b>Header 1</b>
+                    </div>
+                    <div class="card-body">
+                        this is card body
+
+                    </div>
+                    <div class="card-footer">
+                        Tag 1, Tag 2
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 ">
+                <div class="card">
+                    <img class="card-img-top" src="../assets/images/No_Img_Avail.jpg" alt="POST Image">
+                    <div class="card-header">
+                        <b>Header 1</b>
+                    </div>
+                    <div class="card-body">
+                        this is card body
+
+                    </div>
+                    <div class="card-footer">
+                        Tag 1, Tag 2
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 ">
+                <div class="card">
+                    <img class="card-img-top" src="../assets/images/No_Img_Avail.jpg" alt="POST Image">
+                    <div class="card-header">
+                        <b>Header 1</b>
+                    </div>
+                    <div class="card-body">
+                        this is card body
+
+                    </div>
+                    <div class="card-footer">
+                        Tag 1, Tag 2
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-3 ">
+                <div class="card">
+                    <img class="card-img-top" src="../assets/images/No_Img_Avail.jpg" alt="POST Image">
+                    <div class="card-header">
+                        <b>Header 1</b>
+                    </div>
+                    <div class="card-body">
+                        this is card body
+
+                    </div>
+                    <div class="card-footer">
+                        Tag 1, Tag 2
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 ">
+                <div class="card">
+                    <img class="card-img-top" src="../assets/images/No_Img_Avail.jpg" alt="POST Image">
+                    <div class="card-header">
+                        <b>Header 1</b>
+                    </div>
+                    <div class="card-body">
+                        this is card body
+
+                    </div>
+                    <div class="card-footer">
+                        Tag 1, Tag 2
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+</div>
+
+<div *ngIf="isViewSelected">
+    <app-viewscreen [selecteId]="selecteId" [cardDataSelected]="cardDataSelected">
+    </app-viewscreen>
+</div>

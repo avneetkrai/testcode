@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "title": "First post in the world",
+    "description": "this is a post description for a first post with a post post",
+    "photoUrl": "../assets/images/post_1.jpg",
+    "tags": [
+      "first",
+      "test"
+    ]
+  } ,
+  {
+    "id": "2",
+    "title": "Second post in the world",
+    "description": "this is a post description for a second post with a post post",
+    "photoUrl": "../assets/images/post_2.jpg",
+    "tags": [
+      "second",
+      "test"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Third post in the world",
+    "description": "this is a post description for a third post with a post post",
+    "photoUrl": "../assets/images/post_3.jpg",
+    "tags": [
+      "test"
+    ]
+  } ,
+  {
+    "id": "4",
+    "title": "Fourth post in the world",
+    "description": "this is a post description for a fourth post with a post post",
+    "photoUrl": "../assets/images/post_4.jpg",
+    "tags": [
+      "four",
+      "test",
+      "test2"
+    ]
+  } ,
+  {
+    "id": "5",
+    "title": "Fifth post in the world",
+    "description": "this is a post description for a fifth post with a post post",
+    "photoUrl": "../assets/images/post_5.jpg",
+    "tags": [
+      "five",
+      "test"
+    ]
+  } ,
+  {
+    "id": "6",
+    "title": "Sixth post in the world",
+    "description": "this is a post description for a sixth post with a post post",
+    "photoUrl": "../assets/images/post_6.jpg",
+    "tags": [
+      "six",
+      "test",
+      "test2"
+    ]
+  } ,
+  {
+    "id": "7",
+    "title": "Seventh post in the world",
+    "description": "this is a post description for a seventh post with a post post",
+    "photoUrl": "../assets/images/post_7.jpg",
+    "tags": [
+      "seven",
+      "test"
+    ]
+  }  
+
+]

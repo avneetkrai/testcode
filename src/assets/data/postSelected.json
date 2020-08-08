@@ -1,0 +1,11 @@
+
+  {
+    "id": "1",
+    "title": "First post in the world",
+    "description": "this is a post description for a first post with a post post",
+    "photoUrl": "../assets/images/post_1.jpg",
+    "tags": [
+      "first",
+      "test"
+    ]
+  } 

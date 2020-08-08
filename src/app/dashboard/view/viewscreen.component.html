@@ -1,0 +1,27 @@
+<div class="container-fluid" *ngIf="selectedPost">
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-xs-12">
+                <div class="card">
+                    <img class="card-img-top" src={{selectedPost.photoUrl}} alt="POST Image">
+                    <div class="card-header">
+                        <b>{{selectedPost.title}}</b>
+                    </div>
+                    <div class="card-body">
+                        {{selectedPost.description}}
+
+                    </div>
+                    <div class="card-footer">
+                        <span *ngFor="let tags of selectedPost.tags">
+                            {{tags}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
